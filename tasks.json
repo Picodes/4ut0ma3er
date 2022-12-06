@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TSDoc and comments",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Add the appropriate TSDoc and comments.' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "TSDoc",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Create the appropriate TSDoc.' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Ts function",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Create a typescript function corresponding to this comment' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    }
+  ]
+}
