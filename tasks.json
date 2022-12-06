@@ -2,6 +2,15 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "GPT3",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js '${input:instruction}' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
       "label": "TSDoc and comments",
       "type": "shell",
       "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Add the appropriate TSDoc and comments.' '${selectedText}'",
@@ -27,6 +36,13 @@
         "reveal": "never"
       },
       "problemMatcher": "$tsc"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "instruction",
+      "description": "Instruction",
+      "type": "promptString"
     }
   ]
 }
