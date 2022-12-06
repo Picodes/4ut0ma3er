@@ -19,7 +19,7 @@ You can install node.js by following the instructions on the Node.js website: ht
 5. Complete the `tasks.json` file with the path to this repository
 6. Paste the `tasks.json` in your VSCode User Tasks config file, which you can open using VSCode command `Tasks: Open User Tasks`
 
-You're all set! Try it by selecting some test and running VSCode command `Tasks: Run Task`
+You're all set! Try it by selecting some test and running VSCode command `Tasks: Run Task`. You'll eventually need to reload VSCode or restart it.
 
 As an additional step you can setup keybord shortcuts using VSCode command `Preferences: Open Keyboard Shortcuts`
 
