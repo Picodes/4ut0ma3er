@@ -2,7 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "GPT3",
+      "label": "Sort imports",
+      "type": "shell",
+      "command": "node /Users/picodes/Documents/Angle/4ut0ma3er/sortImport.js '${file}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Query GPT3",
       "type": "shell",
       "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js '${input:instruction}' '${selectedText}'",
       "presentation": {
@@ -11,7 +20,25 @@
       "problemMatcher": "$tsc"
     },
     {
-      "label": "TSDoc and comments",
+      "label": "Generate NatSpecs",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Add the appropriate NatSpecs.' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Create Solidity function",
+      "type": "shell",
+      "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Create a solidity function corresponding to this comment' '${selectedText}'",
+      "presentation": {
+        "reveal": "never"
+      },
+      "problemMatcher": "$tsc"
+    },
+    {
+      "label": "Generate TSDoc and add comments",
       "type": "shell",
       "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Add the appropriate TSDoc and comments.' '${selectedText}'",
       "presentation": {
@@ -20,7 +47,7 @@
       "problemMatcher": "$tsc"
     },
     {
-      "label": "TSDoc",
+      "label": "Generate TSDoc",
       "type": "shell",
       "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Create the appropriate TSDoc.' '${selectedText}'",
       "presentation": {
@@ -29,7 +56,7 @@
       "problemMatcher": "$tsc"
     },
     {
-      "label": "Ts function",
+      "label": "Create TypeScript function",
       "type": "shell",
       "command": "node [INSERT_ABSOLUTE_PATH_TO_THIS_REPO]/edit.js 'Create a typescript function corresponding to this comment' '${selectedText}'",
       "presentation": {
